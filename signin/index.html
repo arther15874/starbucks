@@ -30,14 +30,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/signin.css">
 
   <script defer src="../js/common.js"></script> <!-- html요소를 다뤄야 되기 때문에 defer속성을 이용해서 
   html구조가 모두 해석이 되면 그때 main.js가 정상적으로 동작하도록 해줌 -->
-
 </head>
 
 <body>
-
 
   <!-- HEADER  -->
   <header> <!-- 헤더 태그 별 다른 기능은 없지만 헤더 영역 지칭하는 용도 -->
@@ -378,8 +377,28 @@
     </div>
   </header>
 
-  <section class="signin"></section>
-
+  <section class="signin">
+    <h1>로그인</h1>
+    <div class="signin__card">
+      <h2>
+        <strong> Welcome! </strong>스타벅스에 오신 것을 환영합니다.
+      </h2>
+      <form>
+        <input type="text" placeholder="아이드를 입력하세요." />
+        <input type="password" placeholder="비밀번호를 입력하세요" /> <!-- type이 password여서 입력이 외부에 노출이 안됨-->
+        <input type="submit" value="로그인" />
+        <p>
+          * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니, <br /> <!-- br태그로 의도적으로 줄바꿈 처리-->
+          정기적으로 비밀번호를 변경하세요!
+        </p>
+      </form>
+      <div class="actions">
+        <a href="javascript:void(0)">회원가입</a> <!-- "javascript:void(0)" 링크가 없을때 의도적으로 선언-->
+        <a href="javascript:void(0)">아이디 찾기</a>
+        <a href="javascript:void(0)">비밀번호 찾기</a>
+      </div>
+    </div>
+  </section>
   <!-- FOOTER -->
   <footer>
     <div class="inner">
